@@ -351,7 +351,7 @@ void InstanceImpl::initialize(Options& options,
   // Some of the stat sinks may need dispatcher support so don't flush until the main loop starts.
   // Just setup the timer.
   stat_flush_timer_ = dispatcher_->createTimer([this]() -> void {
-          ENVOY_LOG(info, "stat_flush_timer_ fired - invoking flushStats()");
+          //ENVOY_LOG(info, "stat_flush_timer_ fired - invoking flushStats()");
           flushStats();
           });
   stat_flush_timer_->enableTimer(config_->statsFlushInterval());

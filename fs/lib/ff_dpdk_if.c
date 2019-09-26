@@ -1765,7 +1765,7 @@ main_loop(void *arg)
             prev_tsc = cur_tsc;
         }
 
-        dump_port_stats(0);
+        //dump_port_stats(0);
 
         /*
          * Read packet from RX queues
